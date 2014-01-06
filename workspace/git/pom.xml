@@ -5,8 +5,7 @@
   <groupId>com.psl.selenium</groupId>
   <artifactId>pooja_maven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
+  <packaging>war</packaging>
   <name>pooja_maven</name>
   <url>http://maven.apache.org</url>
 
