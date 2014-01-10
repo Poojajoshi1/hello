@@ -9,9 +9,7 @@ public class testHelloWorld {
 public void testDoNothing() throws Exception{
 HelloWorld h = new HelloWorld();
 h.doNothing();
-OneTest one = new OneTest();
-one.testBoth();
-one.testFoo();
+
 assertTrue(true);
 }
 }
