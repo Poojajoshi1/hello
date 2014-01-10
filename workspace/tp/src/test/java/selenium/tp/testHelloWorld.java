@@ -6,8 +6,8 @@ public class testHelloWorld {
         @Test
         public void testDoNothing(){
                 HelloWorld h = new HelloWorld();
-                h.doNothing();
-                assertTrue(true);
+               // h.doNothing();
+                assertEquals("Hello World.", h.doNothing());
         }
         
 }
