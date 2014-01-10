@@ -6,13 +6,18 @@
   <artifactId>tp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.language>java</sonar.language>
+   <!-- Tells Sonar to run the unit tests -->
+    <sonar.dynamicAnalysis>true</sonar.dynamicAnalysis>
+    <!-- Tells Sonar to use JaCoCo as the code coverage tool -->
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+  </properties>
 
   <name>tp</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -22,6 +27,18 @@
       <scope>test</scope>
     </dependency>
      <dependency>
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 <groupId>org.seleniumhq.selenium</groupId>
 
