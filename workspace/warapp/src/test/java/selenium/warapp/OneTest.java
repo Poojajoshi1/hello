@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import org.easymock.EasyMock;
 import org.junit.Before;
 
-public class testHelloWorld {
+public class OneTest {
 
 
 	HttpServletRequest mockReq = null;
@@ -41,11 +41,10 @@ public class testHelloWorld {
 	EasyMock.replay(mockRes);
 
 	h.doGet(mockReq, mockRes);
-
+ 
+ 
 	}
 
 	
 
-
 	}
-
