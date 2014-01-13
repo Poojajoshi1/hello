@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import org.easymock.EasyMock;
 import org.junit.Before;
 
-public class OneTest {
+public class TestHelloWorld {
 
 
 	HttpServletRequest mockReq = null;
@@ -17,7 +17,7 @@ public class OneTest {
 	HttpServletResponse mockRes = null;
 
 	PrintWriter mockPW = null;
-
+ 
 	@Before
  
 	public void setUp() throws Exception {
